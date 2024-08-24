@@ -1,0 +1,93 @@
+body{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.AllCennik{
+    padding: 1rem;
+}
+.CennikText h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding: 3rem;
+    margin-top: 10rem;
+}
+.CennikText h1 span{
+    text-align: center;
+    color: #d0ff00;
+}
+.CennikElements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CennikElement{
+    padding: 3rem;
+    margin: 2rem;
+    width: 30vw;
+
+    background-color: #212121;
+    border-radius: 20px;
+}
+.CennikPhoto {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 20px;
+    max-width: 60%; /* Obrazek dostosowuje się do szerokości kontenera */
+    height: auto; /* Zachowuje proporcje obrazka */
+  }
+  .CennikElement h2 {
+    text-align: center;
+    color: #d0ff00;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .CennikElement .p1 {
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  
+  .CennikElement .p2 {
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .CennikElement ul {
+    padding: 15px;
+    margin: 0;
+    background-color: rgba(26, 26, 26, 0.259);
+    list-style: none;
+  }
+  
+  .CennikElement ul li {
+    color: #ffffff;
+    background-color: rgb(67, 67, 67);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  .PLN{
+    color: #d0ff00;
+  }
+  
+  

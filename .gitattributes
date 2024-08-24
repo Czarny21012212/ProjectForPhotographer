@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+
+# Wymuś LF dla plików JavaScript, JSX, CSS, i innych
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+

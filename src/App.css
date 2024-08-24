@@ -1,0 +1,299 @@
+body {
+  background-image: url('/photoBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #131313; /* Kolor tła, który będzie widoczny w miejscach bez zdjęcia */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* Przykład dla elementu header */
+  color: white;
+  padding: 20px;
+}
+
+h1{
+  color:rgb(0, 52, 120);
+}
+.ul ul{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+}
+.ul ul li{
+  transition: all 200ms ease-in-out;
+}
+.ul ul li:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.ul ul li a{
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+}
+.ul ul li a:hover{
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(240, 248, 255, 0.077);
+  color: rgb(255, 255, 255);
+}
+.logo{
+  width: 300px;
+}
+.all{
+  position: fixed;
+  top: 0; 
+  width: 110vw;
+  margin-left: -7vw;
+  z-index: 3;
+  backdrop-filter: blur(50px);
+  background-color: rgba(0, 0, 0, 0.557);
+  transition: all 20ms ease-in-out;
+  font-size: 1.3rem;
+  color: pink;
+}
+
+.all.shrink{
+  font-size: 1rem;
+  backdrop-filter: blur(40px);
+  color: black;
+}
+
+/* Ustawienie obrazu na cały ekran, z tłem pod headerem */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1; 
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.photo{
+  z-index: 2;
+  
+}
+.About{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 30vh;
+  gap: 10vw;
+}
+.about-p{
+  text-align: left;
+  border-radius: 50px;
+  backdrop-filter: blur(50px);
+  background-color: rgba(0, 0, 0, 0.071);
+  animation-name: boxAbout;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes boxAbout {
+  0%{
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.071);
+  }
+  50%{
+    backdrop-filter: blur(45px);
+    background-color: rgba(0, 0, 0, 0.484);
+  }
+  0%{
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.071);
+  }
+}
+.about-p p{
+  padding: 20px;
+  width: 35vw;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: aliceblue;
+  gap: 8px;
+
+}
+.about-p span {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  border-bottom: 2px solid #d0ff00;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+.highlight{
+  color: #d0ff00;
+}
+.AllAboutMe {
+  display: flex;
+  justify-content: center;
+  margin-top: 60vh;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+}
+.AboutMeOpis{
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  border-radius: 20px;
+}
+.AboutMeBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121; 
+  padding: 50px;
+  gap: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateX(-2000px);
+  transition: all 1s ease-in-out
+}
+
+.AboutMeText {
+  background-color: #ffffff09; /* Biały */
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 40vw;
+  font-weight: 500;
+  color: #e2e2e2; /* Ciemnoszary dla lepszej czytelności */
+}
+
+.JacekPhoto {
+  width: 300px;
+  border-radius: 20px;
+}
+.AboutMeNapis h1{
+  color:#d0ff00;
+  font-size: 2.5rem;
+}
+.JacekName{
+  color: #d0ff00;
+  animation-name: JacekName;
+  animation-duration: 1s;
+
+}
+@keyframes JacekName {
+  0%{
+    color: #e2e2e2;
+  }
+  100%{
+    color: #d0ff00;
+  }
+  
+}
+.AboutMeBox.visible {
+  transform: translateX(0px);
+}
+
+.AboutMeBox.hidden {
+  transform: translateX(-2000px);
+}
+.GalleryPhoto{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-row: 1000px;
+  width: 1200px;
+  margin: 5px auto;
+}
+.GalleryPhoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2px;
+  transition: all 500ms ease-in-out;
+}
+.GalleryPhoto img:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 3px 3px 37px -10px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 3px 3px 37px -10px rgba(255, 255, 255, 1);
+  box-shadow: 3px 3px 37px -10px rgba(255, 255, 255, 1);
+  
+}
+.GallryAll{
+  padding: 1rem;
+  backdrop-filter: blur(100px);
+}
+.KontaktBox{
+  margin-top: 5rem;
+  display: flex ;
+  justify-content: space-around;
+  background-color: #212121;
+  padding: 20px;
+}
+.farewell{
+  width: 30vw;
+}
+.Kontaktright{
+  padding: 50px;
+}
+.Kontaktright h1{
+  color: #ffffff;
+  margin: 20px;
+  border-bottom: solid #d0ff00 2px ;
+}
+.Kontaktright input,
+.Kontaktright textarea,
+.Kontaktright button {
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.Kontaktright input:focus,
+.Kontaktright textarea:focus,
+.Kontaktright button:hover {
+  background-color: #d0ff00;
+  color: #131313;
+  border: none;
+
+}
+
+
+.Kontaktright button{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #d0ff00;
+  font-weight: 600;
+}
+input placeholder{
+  background-color: #d0ff00;
+}
+#test{
+  margin: 10px;
+  border-bottom: 2px solid rgb(145, 255, 0);
+  color:#6aff00;
+  text-align: center;
+  border-radius: 50px;
+}
+
