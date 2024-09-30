@@ -3,7 +3,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #131313; /* Kolor tła, który będzie widoczny w miejscach bez zdjęcia */
+  background-color: #131313;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5); /* Przykład dla elementu header */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 20px;
 }
@@ -68,7 +68,6 @@ h1{
   color: black;
 }
 
-/* Ustawienie obrazu na cały ekran, z tłem pod headerem */
 .background-container {
   position: absolute;
   top: 0;
@@ -174,12 +173,12 @@ a{
 }
 
 .AboutMeText {
-  background-color: #ffffff09; /* Biały */
+  background-color: #ffffff09;
   border-radius: 20px;
   padding: 20px;
   max-width: 40vw;
   font-weight: 500;
-  color: #e2e2e2; /* Ciemnoszary dla lepszej czytelności */
+  color: #e2e2e2;
 }
 
 .JacekPhoto {
